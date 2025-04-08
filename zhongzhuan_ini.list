@@ -1,0 +1,98 @@
+[general]
+skip_proxy = 0
+dns_nameserver = 127.0.0.1
+tun = true
+ipv6 = false
+dns_fallback = false
+
+[proxy_group]
+🇺🇸US1 = select,US1_Node
+🇺🇸US2 = select,US2_Node
+🇺🇸US3 = select,US3_Node
+🇺🇸US4 = select,US4_Node
+🇺🇸US5 = select,US5_Node
+🇺🇸US6 = select,US6_Node
+🇺🇸US7 = select,US7_Node
+🇯🇵JP1 = select,JP1_Node
+🇯🇵JP2 = select,JP2_Node
+🇯🇵JP3 = select,JP3_Node
+🇯🇵JP4 = select,JP4_Node
+🇯🇵JP5 = select,JP5_Node
+🇯🇵JP6 = select,JP6_Node
+🇯🇵JP7 = select,JP7_Node
+🇫🇷FR1 = select,FR1_Node
+🇫🇷FR2 = select,FR2_Node
+🇫🇷FR3 = select,FR3_Node
+🇫🇷FR4 = select,FR4_Node
+🇫🇷FR5 = select,FR5_Node
+🇫🇷FR6 = select,FR6_Node
+🇫🇷FR7 = select,FR7_Node
+🇩🇪DE1 = select,DE1_Node
+🇩🇪DE2 = select,DE2_Node
+🇩🇪DE3 = select,DE3_Node
+🇩🇪DE4 = select,DE4_Node
+🇩🇪DE5 = select,DE5_Node
+🇩🇪DE6 = select,DE6_Node
+🇩🇪DE7 = select,DE7_Node
+
+[proxy]
+Zhongzhuan_Node = include-all,zhongzhuan
+US1_Node = zhongzhuan,include-all,us1
+US2_Node = zhongzhuan,include-all,us2
+US3_Node = zhongzhuan,include-all,us3
+US4_Node = zhongzhuan,include-all,us4
+US5_Node = zhongzhuan,include-all,us5
+US6_Node = zhongzhuan,include-all,us6
+US7_Node = zhongzhuan,include-all,us7
+JP1_Node = zhongzhuan,include-all,jp1
+JP2_Node = zhongzhuan,include-all,jp2
+JP3_Node = zhongzhuan,include-all,jp3
+JP4_Node = zhongzhuan,include-all,jp4
+JP5_Node = zhongzhuan,include-all,jp5
+JP6_Node = zhongzhuan,include-all,jp6
+JP7_Node = zhongzhuan,include-all,jp7
+FR1_Node = zhongzhuan,include-all,fr1
+FR2_Node = zhongzhuan,include-all,fr2
+FR3_Node = zhongzhuan,include-all,fr3
+FR4_Node = zhongzhuan,include-all,fr4
+FR5_Node = zhongzhuan,include-all,fr5
+FR6_Node = zhongzhuan,include-all,fr6
+FR7_Node = zhongzhuan,include-all,fr7
+DE1_Node = zhongzhuan,include-all,de1
+DE2_Node = zhongzhuan,include-all,de2
+DE3_Node = zhongzhuan,include-all,de3
+DE4_Node = zhongzhuan,include-all,de4
+DE5_Node = zhongzhuan,include-all,de5
+DE6_Node = zhongzhuan,include-all,de6
+DE7_Node = zhongzhuan,include-all,de7
+
+[rule]
+SRC-IP-CIDR,192.168.4.101/32,🇺🇸US1
+SRC-IP-CIDR,192.168.4.102/32,🇺🇸US2
+SRC-IP-CIDR,192.168.4.103/32,🇺🇸US3
+SRC-IP-CIDR,192.168.4.104/32,🇺🇸US4
+SRC-IP-CIDR,192.168.4.105/32,🇺🇸US5
+SRC-IP-CIDR,192.168.4.106/32,🇺🇸US6
+SRC-IP-CIDR,192.168.4.107/32,🇺🇸US7
+SRC-IP-CIDR,192.168.4.201/32,🇯🇵JP1
+SRC-IP-CIDR,192.168.4.202/32,🇯🇵JP2
+SRC-IP-CIDR,192.168.4.203/32,🇯🇵JP3
+SRC-IP-CIDR,192.168.4.204/32,🇯🇵JP4
+SRC-IP-CIDR,192.168.4.205/32,🇯🇵JP5
+SRC-IP-CIDR,192.168.4.206/32,🇯🇵JP6
+SRC-IP-CIDR,192.168.4.207/32,🇯🇵JP7
+SRC-IP-CIDR,192.168.4.301/32,🇫🇷FR1
+SRC-IP-CIDR,192.168.4.302/32,🇫🇷FR2
+SRC-IP-CIDR,192.168.4.303/32,🇫🇷FR3
+SRC-IP-CIDR,192.168.4.304/32,🇫🇷FR4
+SRC-IP-CIDR,192.168.4.305/32,🇫🇷FR5
+SRC-IP-CIDR,192.168.4.306/32,🇫🇷FR6
+SRC-IP-CIDR,192.168.4.307/32,🇫🇷FR7
+SRC-IP-CIDR,192.168.4.401/32,🇩🇪DE1
+SRC-IP-CIDR,192.168.4.402/32,🇩🇪DE2
+SRC-IP-CIDR,192.168.4.403/32,🇩🇪DE3
+SRC-IP-CIDR,192.168.4.404/32,🇩🇪DE4
+SRC-IP-CIDR,192.168.4.405/32,🇩🇪DE5
+SRC-IP-CIDR,192.168.4.406/32,🇩🇪DE6
+SRC-IP-CIDR,192.168.4.407/32,🇩🇪DE7
+FINAL,REJECT
